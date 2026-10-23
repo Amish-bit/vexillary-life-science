@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vexillary Life Science - Pharmaceutical and healthcare business enquiries.">
+    <title>Vexillary Life Science | Pharmaceutical Healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="Vexillary Life Science Logo">
+                <span>Vexillary Life Science</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Our Products</a>
+                <a href="#business">Business Enquiries</a>
+                <a href="#contact" class="contact-link">Contact Us</a>
+            </div>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                type="button">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home / Hero -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO Vexillary Life Science</p>
+
+                <h1>
+    Advancing Healthcare,
+    <span>Enhancing Lives.</span>
+</h1>
+
+                <p class="hero-description">
+    Discover our commitment to pharmaceutical excellence,
+    trusted partnerships, and healthcare-focused solutions
+    for businesses and customers.
+</p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="hero-button">
+    Explore Our Products →
+</a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="medical-cross" aria-hidden="true">+</div>
+
+                <div class="hero-badge">
+                    <strong>Vexillary Life Science</strong>
+                    <span>Pharmaceutical Healthcare</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Us -->
+        <section class="section about" id="about">
+
+            <div class="section-heading">
+                <p class="eyebrow">ABOUT US</p>
+
+                <h2>Focused on Healthcare and Relationships</h2>
+
+                <p>
+                    Vexillary Life Science aims to build professional relationships
+                    with customers, distributors, and healthcare businesses.
+                    Our company information and services will be presented
+                    transparently.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">✚</div>
+                    <h3>Healthcare Focus</h3>
+                    <p>
+                        A pharmaceutical-focused approach to healthcare
+                        products and business relationships.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">✓</div>
+                    <h3>Quality Commitment</h3>
+                    <p>
+                        Clear product information and attention to
+                        applicable quality and regulatory requirements.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">♡</div>
+                    <h3>Customer Relationships</h3>
+                    <p>
+                        A convenient point of contact for customer
+                        questions and business enquiries.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Products -->
+       
+
+    <!-- Products -->
+<section class="section products-section" id="products">
+
+    <div class="section-heading">
+        <p class="eyebrow">OUR PORTFOLIO</p>
+        <h2>Our Products</h2>
+        <p>
+            Explore our pharmaceutical product portfolio.
+            Contact our team for product enquiries.
+        </p>
+    </div>
+
+    <div class="products-grid">
+
+       
+        </div>
+
+    
+</section>
+   
+
+    
+
+
+        <!-- Business Enquiries -->
+        <section class="section business" id="business">
+
+            <div>
+                <p class="eyebrow">BUSINESS ENQUIRIES</p>
+
+                <h2>Let's Build Professional Partnerships</h2>
+
+                <p>
+                    Contact Vexillary Life Science for distributor enquiries,
+                    business collaborations, and other company-related
+                    questions.
+                </p>
+            </div>
+
+            <a href="#contact" class="btn btn-light">
+                Get in Touch
+            </a>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+
+            <div class="section-heading">
+                <p class="eyebrow">CONTACT US</p>
+
+                <h2>How Can We Help You?</h2>
+
+                <p>
+                    Send us your enquiry using the form below.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm"
+      action="https://formsubmit.co/vexillarylifescience@gmail.com"
+      method="POST">
+
+    <input type="hidden" name="_subject"
+           value="New Enquiry - Vexillary Life Science">
+    <input type="hidden" name="_template" value="table">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <label for="customerType">Enquiry Type</label>
+                <select id="customerType" name="customerType" required>
+                    <option value="">Select an enquiry type</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="distribution">Distribution Enquiry</option>
+                    <option value="product">Product Information</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here"
+                    required></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Submit Enquiry
+                </button>
+
+                <p
+                    class="form-message"
+                    id="formMessage"
+                    aria-live="polite">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <a href="#home" class="footer-logo">Vexillary Life Science</a>
+
+        <p>Pharmaceutical Healthcare</p>
+
+        <p class="footer-note">
+            Product availability, company details, and applicable
+            regulatory information should be verified before publication.<br><br>
+            vexillarylifescience@gmail.com
+        </p>
+
+        <p class="copyright">
+            &copy; <span id="year"></span> Vexillary Life Science.
+            All rights reserved.
+        </p>
+
+    </footer>
+    <script src="script.js" defer></script>
+<script type="module" src="products.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vexillary Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf7f2;
+            color: #15343b;
+            padding: 20px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 18px 0;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px #0001;
+        }
+
+        input:not([type="checkbox"]), textarea, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            margin: 7px 0;
+            border: 1px solid #d6e3df;
+            border-radius: 7px;
+            font: inherit;
+        }
+
+        button {
+            background: #087f68;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .secondary { background: #15343b; }
+        .danger { background: #b42318; }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        #dashboard { display: none; }
+        .product { border-top: 1px solid #ddd; padding: 12px 0; }
+    </style>
+</head>
+<body>
+    <h1>Vexillary Life Science</h1>
+    <p>Product Admin Panel</p>
+
+    <div class="card" id="login">
+        <h2>Admin Login</h2>
+        <form id="loginForm">
+            <input id="email" type="email" placeholder="Admin email" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="dashboard">
+        <div class="card">
+            <h2 id="formTitle">Add Product</h2>
+            <form id="productForm">
+                <input id="productName" placeholder="Product name" required>
+                <textarea id="description" placeholder="Product description"></textarea>
+
+                <label>Product image</label>
+                <input id="image" type="file" accept="image/*">
+
+                <label>
+                    <input id="published" type="checkbox" checked style="width:auto">
+                    Publish on website
+                </label>
+
+                <button type="submit">Save Product</button>
+                <button type="button" class="secondary" id="cancelEdit" style="display:none">
+                    Cancel Edit
+                </button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Products</h2>
+            <div id="productList">Loading...</div>
+        </div>
+
+        <button id="logout" class="secondary">Logout</button>
+    </div>
+
+    <p id="message" role="status"></p>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
